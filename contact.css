@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+body {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Poppins", sans-serif;
+   overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu-item .active {
+    background: #061b85;
+    color: #fff;
+}
+
+#electric-ser .active {
+    color: orange;
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 0 30px;
+    max-width: 1300px;
+}
+
+.call {
+    background-color: orange;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+ul {
+    list-style: none;
+    /* padding: 0; */
+}
+
+a {
+    text-decoration: none;
+    color: #1f2a5e;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.contact  {
+    padding: 15px 30px;
+    font-weight: bold;
+    background-color: red;
+    color: #fff;
+    border: none;
+    margin-right: 5rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.contact:hover {
+    background-color: rgb(209, 44, 44);
+}
+.contact a {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+/* navabar styling */
+header {
+    width: 100%;
+    z-index: 5;
+    background-color: #fff;
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+}
+
+.navbar .nav-logo {
+    margin-left: 3.2rem;
+}
+
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    margin-left: -3rem;
+    letter-spacing: 1px;
+} 
+
+.menu .menu-item a {
+    padding: 40px 20px;
+    transition: 0.3s ease;
+}
+
+.menu .menu-item a:hover {
+    background-color: #061b85;
+    color: #fff;
+}
+body.show-mobile-menu {
+    overflow: hidden;
+}
+
+.navbar #menu-close-button, 
+.navbar #menu-open-button {
+    display: none;
+}
+
+/* Home section Styling */
+.home-section .section-content {
+    width: 100%;
+}
+.home-section  img {
+    width: 100%;
+    position: relative;
+}
+.home-section .home-item {
+    width: 100%;
+    text-align: center;
+}
+.home-section .home-item .caption {
+    position: absolute;
+    bottom: 8rem;
+    left: 25%; 
+}
+.home-item .caption #head {
+    font-size: 2.3rem;
+    font-weight: lighter;
+    letter-spacing: 1.2px;
+    color: #fff;
+    line-height: 2;
+}
+.home-item .caption #head::after {
+    content: "";
+    width: 20rem;
+    height: 2px;
+    background: #f4f4f4;
+    display: block;
+    margin: 10px auto 0;
+}
+.home-item .caption #text {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 2;
+}
+
+/* Phone section styling */
+.phone-section {
+    width: 100%;
+    text-align: center;
+}
+.phone-section .phone {
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+}
+.phone-section .cell p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+    color: orange;
+    line-height: 0;
+}
+.phone-section .cell h3 a {
+    font-size: 1.5rem;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    color: red;
+    transition: 0.3s ease;
+}
+.phone-section .cell h3 a:hover {
+    color: orange;
+}
+
+/* form section styling */
+.form-section {
+    width: 100%;
+}
+.form-section .form {
+    width: 100%;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.form-section .form-item label {
+    line-height: 2.5;
+    color: #404454;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.form-section input {
+    width: 20rem;
+    padding: 9px;
+    outline: none;
+}
+.message {
+    max-width: 100%;
+    width: 81%;
+    margin: 1rem auto;
+}
+.message label {
+    line-height: 2.5;
+    color: #404454;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+.message textarea {
+    width: 65rem;
+    height: 9rem;
+    outline: none;
+    padding: 10px;  
+    font-size: 1rem;
+}
+.message #submit {
+    margin-top: 1.2rem;
+    padding: 10px 30px;
+    background: red;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    font-size: 1.15rem;
+    font-size: bold;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.message #submit:hover {
+    background: rgb(209, 44, 44);
+}
+
+/* Contact and Footer styling */
+.contact-section {
+    width: 100%;
+    background: #252a32;
+    color: #fff;
+    margin-top: 6rem;
+}
+.contact-section .contact-item {
+    max-width: 100%;
+    width: 80%;
+    padding-top: 4rem;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    gap: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.contact-item .foot {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+}
+.contact-phone #phone {
+    margin: 30px 0 30px 0;
+    line-height: 2;
+}
+.contact-phone #phone a  {
+    color: #999;
+    font-weight: lighter;
+    letter-spacing: 1.5px;
+}
+.contact-phone #phone a:hover {
+    color: orange;
+} 
+.contact-ser .menu-electric-ser {
+    margin-top: 25px 0;
+    color: #999;
+}
+.menu-electric-ser #electric-ser {
+    font-size: 1.5rem;
+    line-height: 2;
+}
+.menu-electric-ser .electric-link a {
+    color: #999;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: lighter;
+    padding: 10px 0;
+}
+.menu-electric-ser .electric-link:hover, 
+.menu-electric-ser .electric-link a:hover {
+    color: orange;
+}
+.contact-link .foot-link a i {
+    margin: 5px;
+    color: #999;
+    font-size: 1.4rem;
+    transition: 0.3s ease;
+}
+.contact-link .foot-link a i:hover {
+    color: orange;
+}
+.contact-section .foot-copy {
+    background: #404454;
+    margin-top: 4rem;
+    padding: 30px;
+    text-align: center;
+}
+.contact-section .foot-copy .copyRight {
+    color: #999;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+.foot-copy .copyRight a {
+    color: orange;
+    font-weight: lighter;
+}
+
+/* Responsive mobile media */
+@media screen and (max-width: 900px) {
+    body.show-mobile-menu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+    .navbar #menu-open-button,
+    .navbar #menu-close-button {
+        display: block;
+        font-size: 1.8rem;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .navbar #menu-open-button {
+        color: orange;
+    }
+    .navbar #menu-close-button {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        color: orange;
+    }
+    .navbar .menu {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        gap: 20px;
+        top: 0;
+        left: -100%;
+        width: 350px;
+        height: 100vh;
+        background: white;
+        color: #061b85;
+        padding-top: 80px;
+        transition: left 0.3s ease-in-out;
+        box-shadow: 5px 0 10px rgba(0,0,0,0.2);
+        z-index: 2;
+    }
+    body.show-mobile-menu .navbar .menu {
+        left: 0;
+    }
+    .navbar .menu .menu-item {
+        margin: 10px 0;
+    }
+    .navbar .menu .link {
+        font-size: 1.5rem;
+        color: #061b85;
+    }
+    .navbar .menu .link:hover {
+        background: transparent;
+        color: #1f2a5e;
+    }
+    .contact {
+        margin-right: 0;
+        padding: 12px 25px;
+        background-color: transparent;
+    }
+    .contact:hover {
+        background: none;
+    }
+    .contact a {
+        color: #1f2a5e;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    .navbar .nav-logo {
+        margin-left: 20px;
+    }
+    .menu-item .active {
+        background: transparent;
+    }
+
+    /* Home section Responsive */
+    .home-section {
+        max-width: 100%;
+        /* width: 9%; */
+    }
+    .home-section img {
+        width: 100%;
+        height: 100vh;
+    }
+    .home-section .home-item .caption {
+        position: absolute;
+        bottom: 10rem;
+        left: 14%; 
+    }
+
+    /* Phone section responsive */
+    .phone-section .phone {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    /* Form section responsive */
+    .form-section .form-item label {
+        line-height: 2.5;
+        color: #404454;
+        font-size: 1rem;
+    }
+    .form-section input {
+        width: 15rem;
+        padding: 9px;
+        outline: none;
+    }
+    .message {
+        margin: 1rem 0 0 8px;
+    }
+    .message label {
+        line-height: 2.5;
+        margin-top: 15px;
+    }
+    .message textarea {
+        width: 50rem;
+        height: 9rem;
+    }
+
+    /* Contact and Footer Responsive */
+    .contact-section .contact-item {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-top: 3rem;
+    }
+    .contact-phone {
+        max-width: 95%;
+        margin: auto;
+    }
+    .menu-electric-ser #electric-ser {
+        line-height: 2.3;
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .prev, .next, .text {
+        display: none;
+    }
+
+    .menu-item .active {
+        background: transparent;
+    }
+
+    .electric-link {
+        margin-right: 2.7rem;
+        padding: 0;
+    }
+
+    /* Home section Responsive */
+    .home-section .home-item .caption {
+        position: absolute;
+        bottom: 10rem;
+        left: 2%; 
+    }
+    .home-item .caption #head {
+        font-size: 1.5rem;
+        line-height: 1.3;
+        margin-bottom: 10px;
+    }
+    .home-item .caption #head::after {
+        content: "";
+        width: 5rem;
+        height: 2px;
+        background: #f4f4f4;
+        display: block;
+        margin: 10px auto 0;
+    }
+    .home-item .caption #text {
+        font-size: 1rem;
+    }
+ 
+    /* form section responsive */
+    .form-section .form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        line-height: 2.5;
+    }
+    .form-section input {
+        width: 18rem;
+        padding: 9px;
+        outline: none;
+    }
+    .message {
+        margin: 1rem 0 0 8px;
+    }
+    .message label {
+        line-height: 2.5;
+        color: #404454;
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        margin-top: 15px;
+    }
+    .message textarea {
+        width: 18rem;
+        height: 9rem;
+        outline: none;
+        padding: 10px;  
+        font-size: 1rem;
+    }
+    .message #submit {
+        width: 19.3rem;
+        margin-top: 1.2rem;
+        padding: 15px 0;
+        font-size: 1.15rem;
+        font-weight: bold;
+        letter-spacing: 1.2px;
+    }
+}
